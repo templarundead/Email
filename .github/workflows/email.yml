@@ -15,7 +15,7 @@ jobs:
         run: echo Hello, world!
       - name: Send mail
         if: always()
-        uses: dawidd6/action-send-mail@v2
+        uses: ./
         with:
           # mail server settings
           server_address: smtp.gmail.com
@@ -30,4 +30,4 @@ jobs:
           # comma-separated string, send email to
           to: 89101828624@mail.ru
           # from email name
-          from: Waylander
+          from: ${{ github.repository }}
