@@ -15,7 +15,7 @@ jobs:
         run: echo Hello, world! smtp.gmail.com
       - name: Send mail
         if: always()
-        uses: templarundead/mailnotify@v2
+        uses: templarundead/mailnotify@v1
         with:
           # mail server settings
           server_address: ${{ secrets.SERVER_ADRESS }}
