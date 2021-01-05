@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-        files: 'employee.json'
 
       - name: Hello World
         run: echo Hello, world! && exit 1
